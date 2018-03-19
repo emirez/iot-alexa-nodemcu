@@ -6,6 +6,7 @@
 #define WIFI_PASS "PASSWORD"
 #define SERIAL_BAUDRATE 9600
 
+//
 fauxmoESP fauxmo;
 
 void wifiSetup() {
@@ -49,7 +50,7 @@ void setup() {
 
     wifiSetup();
 
-    // Device name is chosen as "MeinLicht"
+    // Device is added and the name is chosen as "MeinLicht"
     fauxmo.addDevice("MeinLicht");
     fauxmo.onMessage(callback);
 }
